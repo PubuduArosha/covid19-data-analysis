@@ -1,0 +1,344 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20201.20.0326.1623                               -->
+<workbook original-version='18.1' source-build='2020.1.2 (20201.20.0326.1623)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='COVID-19 Data' inline='true' name='federated.01dbi7t14dsrvz136dh961cvngod' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='COVID-19  Data' name='google-sheets.194frpg0xk6dh90zn5mob1xii4gf'>
+            <connection REDIRECT_URI='urn:ietf:wg:oauth:2.0:oob' SCOPE='email profile https://www.googleapis.com/auth/drive.readonly' class='google-sheets' cleaning='no' compat='no' dataRefreshTime='' filename='COVID-19  Data' googleSheetId='1Jli-ke6y3Ck5Ge7_qWNrhNvXyc1IT68CwnTMTwV9Mtk' interpretationMode='8' mimeType='application/vnd.google-apps.spreadsheet' server='' server-oauth='' username='it18108514@my.sliit.lk' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='google-sheets.194frpg0xk6dh90zn5mob1xii4gf' name='COVID-19 Data' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:K13419:no:A1:K13419:0' header='yes' outcome='2'>
+            <column datatype='date' date-parse-format='dd/MM/yyyy' name='dateRep' ordinal='0' />
+            <column datatype='integer' name='day' ordinal='1' />
+            <column datatype='integer' name='month' ordinal='2' />
+            <column datatype='integer' name='year' ordinal='3' />
+            <column datatype='integer' name='cases' ordinal='4' />
+            <column datatype='integer' name='deaths' ordinal='5' />
+            <column datatype='string' name='countriesAndTerritories' ordinal='6' />
+            <column datatype='string' name='geoId' ordinal='7' />
+            <column datatype='string' name='countryterritoryCode' ordinal='8' />
+            <column datatype='integer' name='popData2018' ordinal='9' />
+            <column datatype='string' name='continentExp' ordinal='10' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[COVID-19 Data]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>2</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:K13419:no:A1:K13419:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dateRep</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[dateRep]</local-name>
+            <parent-name>[COVID-19 Data]</parent-name>
+            <remote-alias>dateRep</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>day</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[day]</local-name>
+            <parent-name>[COVID-19 Data]</parent-name>
+            <remote-alias>day</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>month</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[month]</local-name>
+            <parent-name>[COVID-19 Data]</parent-name>
+            <remote-alias>month</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[year]</local-name>
+            <parent-name>[COVID-19 Data]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cases</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[cases]</local-name>
+            <parent-name>[COVID-19 Data]</parent-name>
+            <remote-alias>cases</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>deaths</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[deaths]</local-name>
+            <parent-name>[COVID-19 Data]</parent-name>
+            <remote-alias>deaths</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>countriesAndTerritories</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[countriesAndTerritories]</local-name>
+            <parent-name>[COVID-19 Data]</parent-name>
+            <remote-alias>countriesAndTerritories</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>geoId</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[geoId]</local-name>
+            <parent-name>[COVID-19 Data]</parent-name>
+            <remote-alias>geoId</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>countryterritoryCode</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[countryterritoryCode]</local-name>
+            <parent-name>[COVID-19 Data]</parent-name>
+            <remote-alias>countryterritoryCode</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>popData2018</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[popData2018]</local-name>
+            <parent-name>[COVID-19 Data]</parent-name>
+            <remote-alias>popData2018</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>continentExp</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[continentExp]</local-name>
+            <parent-name>[COVID-19 Data]</parent-name>
+            <remote-alias>continentExp</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Cases' datatype='integer' name='[cases]' role='measure' type='quantitative' />
+      <column caption='Continent' datatype='string' name='[continentExp]' role='dimension' type='nominal' />
+      <column caption='Countries' datatype='string' name='[countriesAndTerritories]' role='dimension' semantic-role='[Country].[Name]' type='nominal' />
+      <column caption='Countryterritory Code' datatype='string' hidden='true' name='[countryterritoryCode]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Data' datatype='date' name='[dateRep]' role='dimension' type='ordinal' />
+      <column caption='Day' datatype='integer' name='[day]' role='dimension' type='ordinal' />
+      <column caption='Deaths' datatype='integer' name='[deaths]' role='measure' type='quantitative' />
+      <column caption='Geo Id' datatype='string' hidden='true' name='[geoId]' role='dimension' type='nominal' />
+      <column caption='Month' datatype='integer' name='[month]' role='dimension' type='ordinal' />
+      <column caption='Population' datatype='integer' name='[popData2018]' role='measure' type='quantitative' />
+      <column caption='Year' datatype='integer' name='[year]' role='dimension' type='ordinal' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.544898' measure-ordering='alphabetic' measure-percentage='0.455102' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Sri Lanka&quot;' />
+      </semantic-values>
+      <field-sort-info field-sort-order-type='alphabetical-order' />
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Audit'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>Audit:</run>
+            <run>&#10;Cases are confirmed correctly, Desths are confirmed correctly.&#10;Populaton needs to be filtered on a specific data</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='COVID-19 Data' name='federated.01dbi7t14dsrvz136dh961cvngod' />
+          </datasources>
+          <datasource-dependencies datasource='federated.01dbi7t14dsrvz136dh961cvngod'>
+            <column caption='Data' datatype='date' name='[dateRep]' role='dimension' type='ordinal' />
+            <column-instance column='[dateRep]' derivation='MDY' name='[md:dateRep:ok]' pivot='key' type='ordinal' />
+            <column caption='Population' datatype='integer' name='[popData2018]' role='measure' type='quantitative' />
+            <column-instance column='[popData2018]' derivation='Sum' name='[sum:popData2018:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.01dbi7t14dsrvz136dh961cvngod].[md:dateRep:ok]'>
+            <groupfilter function='member' level='[md:dateRep:ok]' member='20200427' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.01dbi7t14dsrvz136dh961cvngod].[md:dateRep:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.01dbi7t14dsrvz136dh961cvngod].[sum:popData2018:qk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{15DB6632-F99C-417C-BE44-2E8E90C12F18}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Audit'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.01dbi7t14dsrvz136dh961cvngod].[md:dateRep:ok]</field>
+          </color-one-way>
+        </highlight>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{5EA3AEF6-1281-45EC-8D10-842CDFE8F9E8}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Audit' width='124'>
+      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
+      TkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
