@@ -1,2 +1,2 @@
 # COVID19-Data-Analysis
-Data visualization | Tableau |  
+Data visualization | Tableau 
